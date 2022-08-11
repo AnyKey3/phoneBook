@@ -6,12 +6,14 @@ public class Employee {
     }
 
     public Employee(String fio, String title, String department) {
+        this.id = id;
         this.fio = fio;
         this.title = title;
         this.department = department;
     }
 
-    public Employee(String fio, String title, String department, char businessPhone, char personalPhone) {
+    public Employee(int id, String fio, String title, String department, char businessPhone, char personalPhone) {
+        this.id = id;
         this.fio = fio;
         this.title = title;
         this.department = department;
@@ -77,6 +79,7 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
+                "id='" + id + '\'' +
                 "fio='" + fio + '\'' +
                 ", title='" + title + '\'' +
                 ", department='" + department + '\'' +
