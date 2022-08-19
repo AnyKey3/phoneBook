@@ -2,10 +2,14 @@ package by.anykey.phoneBook.core;
 
 public class Employee {
 
-    public Employee(){
-    }
+    private final int id;
+    private String fio;
+    private String title;
+    private String department;
+    private char businessPhone;
+    private char personalPhone;
 
-    public Employee(String fio, String title, String department) {
+    public Employee(int id, String fio, String title, String department) {
         this.id = id;
         this.fio = fio;
         this.title = title;
@@ -24,17 +28,6 @@ public class Employee {
     public int getId() {
         return id;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    private int id;
-    private String fio;
-    private String title;
-    private String department;
-    private char businessPhone;
-    private char personalPhone;
 
     public String getFio() {
         return fio;

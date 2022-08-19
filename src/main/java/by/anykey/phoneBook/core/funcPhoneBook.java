@@ -5,18 +5,20 @@ import java.util.List;
 public interface funcPhoneBook {
 
     //Добавление сотрудника
-    void addEmployee(Employee employee);
+
+
+    void addEmployee(PhoneBook pB, Employee employee);
 
     //Получение списка всех записей
-    List<Employee> getAllEmployee();
+    List<Employee> getAllEmployee(PhoneBook pB);
 
     //Получение  записи по id
-    Employee getIdPerson(int id);
+    Employee getIdPerson(PhoneBook pB, int id);
 
     //Редактирование записи по id
-    boolean updateEmployee(Employee person, int id);
+    boolean updateEmployee(PhoneBook pB, int id, String fio);
 
     //Удаление записи по id
-    boolean deleteEmplyeeId(int id);
+    boolean deleteEmplyeeId(PhoneBook pB, int id);
 
 }
